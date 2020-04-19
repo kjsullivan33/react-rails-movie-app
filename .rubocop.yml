@@ -1,0 +1,33 @@
+AllCops:
+  Style/ClassAndModuleChildren:
+    EnforcedStyle: compact
+  Exclude:
+    - "db/schema.rb"
+    - "db/migrate/*.rb"
+    - ".bundle/**/*"
+    - "bin/**/*"
+    - "vendor/**/*"
+    - "**/config/**/*"
+  TargetRubyVersion: 2.6
+
+Documentation:
+    Enabled: false
+
+
+
+Rails:
+  Enabled: true
+
+Metrics/LineLength:
+  Max: 130
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - "db/**/*"
+
+Metrics/BlockLength:
+  Max: 10
+  Exclude:
+    - "spec/**/*"
+    - "config/routes.rb"
